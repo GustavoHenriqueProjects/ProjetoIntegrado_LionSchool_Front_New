@@ -65,6 +65,12 @@ const createCards = ($date, $statusStudent) => {
     aluno_nome.append(nome)
     div.append(aluno_image, aluno_nome)
 
+    div.addEventListener('click', function(){
+        const nameStudent = div.innerText
+        localStorage.setItem('$nameStudent', nameStudent)
+        window.open('graphics_grades.html')
+    })
+
     return div
 
 }
