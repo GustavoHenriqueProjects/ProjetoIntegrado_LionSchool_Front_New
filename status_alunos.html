@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main-ds.css">
+    <script src="https://kit.fontawesome.com/98589b12b7.js" crossorigin="anonymous"></script>
+    <script src="./front_javaScript/cards_students_status.js" type="module" defer></script>
+    <title>Status dos alunos da escola Lion School</title>
+</head>
+
+<body>
+    <header>
+        <div class="icon-area">
+            <div class="image">
+                <img src="./img/logo-image.png" alt="">
+            </div>
+            <div class="icon-title">
+                <p class="title">Lion School</p>
+            </div>
+        </div>
+
+        <div class="out-area">
+            <i class="fa-solid fa-share-from-square"></i>
+            <p class="sair">Sair</p>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="status">
+            <div class="menu-area">
+                <select id="options">
+                    <option value="status">
+                        status
+                    </option>
+                    <option value="finalizado">
+                        finalizado
+                    </option>
+                    <option value="cursando">
+                        cursando
+                    </option>
+                </select>
+            </div>
+
+            <div class="legend-area">
+                <p class="title">LEGENDA</p>
+
+                <div class="legend">
+                    <div class="color-legend">
+                        <img src="./img/legend1.png" alt="">
+                    </div>
+                    <p class="title">Cursando</p>
+                </div>
+
+                <div class="legend">
+                    <div class="color-legend">
+                        <img src="./img/legend2.png" alt="">
+                    </div>
+                    <p class="title">Finalizado</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="titulo">
+            <span></span>
+        </div>
+
+        <div class="cards">
+            <!-- <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="Aluno(a)" class="student">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div> -->
+
+            <!-- <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="aluno-imagem">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="aluno-nome">
+                    <span class="name">HÉLIDA BENTO DE OLIVEIRA LINS</span>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+
+    <footer>
+        <div class="contact">
+            <div class="container-contact">
+                <i class="fa-solid fa-phone" id="simbol"></i>
+                <p class="text">(11) 4774-4700</p>
+            </div>
+
+            <div class="container-contact">
+                <i class="fa-solid fa-envelope" id="simbol"></i>
+                <p class="text">lionschool@gmail.com</p>
+            </div>
+
+            <div class="container-contact">
+                <i class="fa-solid fa-location-dot" id="simbol"></i>
+                <p class="text">Rua tcc, 211, Centro, Jandira</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="text-copyright"> Copyright © 2023 | Gustavo Henrique & Ingryd Shirlley </p>
+        </div>
+
+        <div class="social">
+            <div class="ellipse">
+                <i class="fa-brands fa-youtube" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-twitter" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-instagram" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-facebook" id="icon-social"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+footer {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3347B0;
+}
+
+.contact {
+    display: grid;
+    color: white;
+    font-size: 25px;
+}
+
+.container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.text {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#simbol {
+    padding-left: 10px;
+    width: 45px;
+}
+
+.copyright {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ellipse {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-style: solid;
+}

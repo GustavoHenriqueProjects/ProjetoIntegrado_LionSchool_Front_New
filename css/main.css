@@ -1,0 +1,103 @@
+main {
+    background-color: #F5F5F5;
+    height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.media {
+    display: flex;
+}
+
+.container-text {
+    padding-left: 96px;
+    padding-top: 120px;
+    padding-bottom: 96px;
+}
+
+.principal-text {
+    font-size: 55px;
+    font-weight: lighter;
+    width: 500px;
+    font-size: 60px;
+    font-size: 60px;
+}
+
+.principal-text-before {
+    font-size: 55px;
+    font-weight: lighter;
+    width: 500px;
+    font-size: 60px;
+}
+
+.principal-text-before::after {
+    content: " curso";
+    color: #3347B0;
+    font-weight: bold;
+}
+
+.img-computer {
+    margin-top: 44px;
+}
+
+.container-img {
+    display: grid;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title_card {
+    font-size: 2.9rem;
+}
+
+.button-ds {
+    height: 200px;
+    width: 400px;
+    background-color: #3347B0;
+    font-size: 45px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-ds::before {
+    content: "</> ";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+    height: 200px;
+    width: 400px;
+    background-color: #3347B0;
+    font-size: 45px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.vector-redes {
+    width: 70px;
+}
+
+.container-buttons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

@@ -1,0 +1,99 @@
+main {
+    height: 75vh;
+}
+
+.status {
+    background-color: #BCC2E5;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-area {
+    color: #3347B0;
+}
+
+.legend-area {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #3347B0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 30px;
+    color: #3347B0;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 550px;
+    overflow: auto;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 50%;
+    background-color: #3347B0;
+}
+
+.card_yellow{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 50%;
+    background-color: rgb(185, 185, 68);
+}
+
+.card_blue{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 50%;
+    background-color: rgb(30, 110, 202);
+}
+    
+.aluno-nome {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img_student{
+    height: 120px;
+}
