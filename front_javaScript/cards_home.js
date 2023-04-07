@@ -24,7 +24,7 @@ const createButtons = ($buttons) => {
 
     div.append(img, title)
 
-    div.addEventListener('click', function() {
+    div.addEventListener('click', function () {
         let click = div.textContent
         newSection(click)
     })
@@ -32,7 +32,7 @@ const createButtons = ($buttons) => {
     return div
 }
 
-const loadCards = async() => {
+const loadCards = async () => {
     const cards = await getCardsCourses()
 
     const buttons = document.querySelector('.buttons')
@@ -43,3 +43,4 @@ const loadCards = async() => {
 }
 
 loadCards()
+

@@ -1,14 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/aluno.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./front_javaScript/graphic_grades.js" type="module" defer></script>
     <title>Student Grades</title>
 </head>
+
 <body>
-    <table id="spreadsheet_grades"></table>
+    <header>
+        <div class="icon-area">
+            <div class="image">
+                <img src="./img/logo-image.png" alt="">
+            </div>
+            <div class="icon-title">
+                <p class="title">Lion School</p>
+            </div>
+        </div>
+
+        <div class="out-area">
+            <i class="fa-solid fa-share-from-square"></i>
+            <p class="sair">Voltar</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="aluno-card">
+                <!-- <div class="container_image">
+                <img src="./img/menina2.png" class= "imagem-aluno" alt="">
+              </div>
+              <div class="nome-aluno">
+                <p class="aluno-nome">
+                    JOSÉ MATHEUS DA SILVA MIRANDA
+                </p>  
+              </div> -->
+            </div>
+            <div class="grafico-card" id="grafico-card">
+                <div class="graphic">
+                    <!-- <div class="grades_max">
+                        <p>12</p>
+                        <p>19</p>
+                        <p>12</p>
+                        <p>100</p>
+                        <p>10</p>
+                    </div>
+                    <div class="chart">
+                        <div class="collumn">
+                            <div class="collumn_grade">
+    
+                            </div>
+                        </div>
+                        <div class="collumn"></div>
+                        <div class="collumn"></div>
+                        <div class="collumn"></div>
+                        <div class="collumn"></div>
+                        <div class="collumn"></div>
+                        <div class="collumn"></div>
+                    </div>
+                    <div class="names_matter">
+                        <p>12</p>
+                        <p>19</p>
+                        <p>12</p>
+                        <p>100</p>
+                        <p>10</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div class="container-contact">
+                <i class="fa-solid fa-phone" id="simbol"></i>
+                <p class="text">(11) 4774-4700</p>
+            </div>
+
+            <div class="container-contact">
+                <i class="fa-solid fa-envelope" id="simbol"></i>
+                <p class="text">lionschool@gmail.com</p>
+            </div>
+
+            <div class="container-contact">
+                <i class="fa-solid fa-location-dot" id="simbol"></i>
+                <p class="text">Rua tcc, 211, Centro, Jandira</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="text-copyright"> Copyright © 2023 | Gustavo Henrique & Ingryd Shirlley </p>
+        </div>
+
+        <div class="social">
+            <div class="ellipse">
+                <i class="fa-brands fa-youtube" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-twitter" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-instagram" id="icon-social"></i>
+            </div>
+
+            <div class="ellipse">
+                <i class="fa-brands fa-facebook" id="icon-social"></i>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
