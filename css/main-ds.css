@@ -58,7 +58,7 @@ main {
     justify-content: space-around;
     width: 200px;
     height: 50%;
-    background-color: #3347B0;
+    background-color: #3ac892;
 }
 
 .card_yellow{
@@ -97,3 +97,20 @@ main {
 .img_student{
     height: 120px;
 }
+
+.error-message-none {
+    display: none;
+  }
+
+  .error-message-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe4e4;
+    border: 1px solid #ff4c4c;
+    color: #ff4c4c;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
