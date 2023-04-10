@@ -33,7 +33,6 @@ const typeStudentsYear = async (year) => {
     if (typeCourse == 'DS') {
         const statusStudent = await getStudentYearDs(year)
         const cards = document.querySelector('.cards')
-
         const xhr = new XMLHttpRequest();
         const url = `https://lionschool.onrender.com/v1/lion-school/alunos/curso/ds/ano-finalizacao?ano=${year}`
 
@@ -41,6 +40,7 @@ const typeStudentsYear = async (year) => {
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
+
                 //$date é um parametro do meu map que percorre o meu Json e passa as informações do listCards para a função createCards
                 const listCards = statusStudent.alunos.map($date => createCards($date))
                 cards.replaceChildren(...listCards)
@@ -105,12 +105,12 @@ option.addEventListener('change', function () {
 })
 
 const createCards = ($date, $statusStudent) => {
-    console.log($statusStudent)
+
     const div = document.createElement('div')
-    if ($statusStudent == 'Finalizado') {
+    if ($statusStudent == 'Finalizado' || $date.status == 'Finalizado') {
         div.classList.add('card_yellow')
         div.classList.remove('card')
-    } else if ($statusStudent == 'Cursando') {
+    } else if ($statusStudent == 'Cursando' || $date.status == 'Cursando') {
         div.classList.add('card_blue')
         div.classList.remove('card')
     } else {
