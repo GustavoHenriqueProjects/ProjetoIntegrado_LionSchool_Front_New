@@ -48,6 +48,8 @@ header {
 .sair {
     margin-left: 10px;
     height: 40px;
+    text-decoration: none;
+    color: white;
 }
 
 a {

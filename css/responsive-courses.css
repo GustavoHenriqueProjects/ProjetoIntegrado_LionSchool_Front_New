@@ -92,16 +92,16 @@
     .legend-area {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         color: #3347B0;
     }
     
     #title-legend {
-        font-size: 15px;
+        font-size: 12px;
     }
     
     #text-legend{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .legend {
@@ -110,28 +110,34 @@
     
     .titulo {
         text-align: center;
-        font-size: 40px;
-        
+        font-size: 40px;  
     }
+
+    .error-message-flex {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 20%;
+        font-size: 1rem;
+    }
+    
 
     /* footer */
     footer {
         display: grid;
         height: 10vh;
         grid-template-areas: "contact" "social" "copy";
-        position: relative;
     }
 
     .contact {
         font-size: 10px;
         text-align: center;
         display: flex;
-        gap: 10px;
+        gap: 5px;
         grid-area: contact;
     } 
 
     .text{
-        font-size: 11px;
+        font-size: 10px;
     }
     
     #simbol {
@@ -159,4 +165,3 @@
         height: 30px;
     }
 }
-  
