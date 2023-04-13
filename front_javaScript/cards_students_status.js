@@ -7,7 +7,7 @@ import { getStudentYearDs } from "../endPoints/cards_student_year_ds.js"
 import { getStudentYearRds } from "../endPoints/cards_student_year_rds.js"
 
 //Responsavel por criar os cards dos estudantes que finalizaram ou estao cursando
-const typeStatusStudents = async ($statusStudent) => {
+const typeStatusStudents = async($statusStudent) => {
     if (typeCourse == "DS") {
         const statusStudent = await getTypeStatusStudent($statusStudent)
         const cards = document.querySelector('.cards')
@@ -28,7 +28,7 @@ const typeStatusStudents = async ($statusStudent) => {
 
 }
 
-const typeStudentsYear = async (year) => {
+const typeStudentsYear = async(year) => {
 
     if (typeCourse == 'DS') {
         const statusStudent = await getStudentYearDs(year)
@@ -38,7 +38,7 @@ const typeStudentsYear = async (year) => {
 
         xhr.open('GET', url, false);
 
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
 
                 //$date é um parametro do meu map que percorre o meu Json e passa as informações do listCards para a função createCards
@@ -69,7 +69,7 @@ const typeStudentsYear = async (year) => {
         const url = `https://lionschool.onrender.com/v1/lion-school/alunos/curso/rds/ano-finalizacao?ano=${year}`
         xhr.open('GET', url, false);
 
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 //$date é um parametro do meu map que percorre o meu Json e passa as informações do listCards para a função createCards
                 const listCards = statusStudent.alunos.map($date => createCards($date))
@@ -93,7 +93,7 @@ const typeStudentsYear = async (year) => {
 }
 
 const option = document.querySelector('#options')
-option.addEventListener('change', function () {
+option.addEventListener('change', function() {
     if (option.value.toUpperCase() == 'STATUS') {
         loadCardsStudents(typeCourse)
     } else if (option.value.toUpperCase() == 'FINALIZADO' || option.value.toUpperCase() == 'CURSANDO') {
@@ -136,17 +136,18 @@ const createCards = ($date, $statusStudent) => {
     aluno_nome.append(nome)
     div.append(aluno_image, aluno_nome)
 
-    div.addEventListener('click', function () {
+    div.addEventListener('click', function() {
         const nameStudent = div.innerText
         localStorage.setItem('$nameStudent', nameStudent)
         window.open('graphics_grades.html')
+        window.close('status_alunos.html')
     })
 
     return div
 
 }
 
-const loadCardsStudents = async ($typeCourse) => {
+const loadCardsStudents = async($typeCourse) => {
     const infStudents = await getStudents($typeCourse)
 
     const cards = document.querySelector('.cards')
