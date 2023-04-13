@@ -53,6 +53,8 @@ main {
   flex-direction: column;
   background-color: white;
   height: 500px;
+  width: 500px;
+  padding-right: 10px;
   max-width: 100%;
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -62,6 +64,7 @@ main {
   flex-direction: column;
   background-color: white;
   height: 500px;
+  padding-left: 10px;
   width: auto;
 }
 
@@ -72,6 +75,7 @@ main {
   align-items: center;
   padding-left: 20px;
   gap: 10px;
+  justify-content: center;
 }
 
 .grades_max p,
@@ -79,6 +83,7 @@ main {
   font-size: 0.8rem;
   font-weight: 600;
   width: 10%;
+  
 }
 
 .chart {
@@ -86,7 +91,7 @@ main {
   display: flex;
   align-items: end;
   gap: 10px;
-  padding-left: 10px;
+  justify-content: center;
 }
 
 .collumn {
@@ -99,7 +104,6 @@ main {
 
 .collumn_grade {
   width: 100%;
-  background-color: lightgreen;
 }
 
 .names_matter {
@@ -108,6 +112,7 @@ main {
   height: 10%;
   gap: 10px;
   padding-left: 10px;
+  justify-content: center;
 }
 
 .names_matter p {

@@ -1,12 +1,12 @@
 'use strict'
-import {getGraphicCourses} from "../endPoints/graphic_grades.js"
+import { getGraphicCourses } from "../endPoints/graphic_grades.js"
 const nameStudent = localStorage.getItem('$nameStudent')
 
-const createCard = (dataStudent) =>{
+const createCard = (dataStudent) => {
 
     const div = document.createElement('div')
     div.classList.add('aluno-card')
-    
+
     const containerImg = document.createElement('div')
     containerImg.classList.add('container_image')
 
@@ -29,9 +29,9 @@ const createCard = (dataStudent) =>{
     return div
 
 }
-const loadCardStudent = async($nameStudent) =>{
+const loadCardStudent = async($nameStudent) => {
     const card = await getGraphicCourses($nameStudent)
-    
+
     const cardStudent = document.querySelector('.aluno-card')
 
     const cardFilled = card.aluno.map(student => createCard(student))
@@ -40,8 +40,8 @@ const loadCardStudent = async($nameStudent) =>{
 }
 loadCardStudent(nameStudent)
 
-const createGraphic = (datas) =>{
-    
+const createGraphic = (datas) => {
+
     const div = document.createElement('div')
     div.classList.add('graphic')
 
@@ -58,7 +58,7 @@ const createGraphic = (datas) =>{
         const title = document.createElement('p')
         title.innerHTML = disciplina.carga
 
-        
+
         const matter = document.createElement('p')
         matter.innerHTML = disciplina.nome
 
@@ -69,20 +69,20 @@ const createGraphic = (datas) =>{
         divCollumnGrade.classList.add('collumn_grade')
 
         //Aplica uma altura para a div collumn_grade deacordo com a nota
-        const collumnHeight = parseInt(disciplina.media)*3
+        const collumnHeight = parseInt(disciplina.media) * 3
         divCollumnGrade.style.height = `${collumnHeight}px`
 
         //Aplica um cor para a div deacordo com a nota
         const statusGrade = Number(disciplina.media)
-        if(statusGrade >= 70){
+        if (statusGrade >= 70) {
             divCollumnGrade.style.backgroundColor = 'blue'
             matter.style.color = 'blue'
             title.style.color = 'blue'
-        }else if(statusGrade>=60){
-            divCollumnGrade.style.backgroundColor = 'yellow'
-            matter.style.color = 'yellow'
-            title.style.color = 'yellow'
-        }else{
+        } else if (statusGrade >= 60) {
+            divCollumnGrade.style.backgroundColor = '#F7D917'
+            matter.style.color = '#F7D917'
+            title.style.color = '#F7D917'
+        } else {
             divCollumnGrade.style.backgroundColor = 'red'
             matter.style.color = 'red'
             title.style.color = 'red'
@@ -94,12 +94,12 @@ const createGraphic = (datas) =>{
         divMatter.append(matter)
     });
 
-    div.append(divTitle,divChart, divMatter)
+    div.append(divTitle, divChart, divMatter)
 
     return div
 }
 
-const loadGraphicsGrades = async($nameStudent) =>{
+const loadGraphicsGrades = async($nameStudent) => {
 
     const graphic = await getGraphicCourses($nameStudent)
 
